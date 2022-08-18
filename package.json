@@ -1,0 +1,56 @@
+{
+  "name": "telestatic",
+  "version": "1.0.0",
+  "description": "Telegram MTProto framework for NodeJS",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "ts-node ./tes/index.ts --project ./tsconfig.json",
+    "build": "rm -rf ./lib && tsc",
+    "pretty-quick": "pretty-quick --staged --pattern \"src/**/*.*(js|jsx|ts|tsx)\"",
+    "prettier": "prettier -w ./src",
+    "update": "yarn up \"**\" --interactive",
+    "prepare": "echo \"🐍 Building snake package.\" && rm -rf ./lib && tsc"
+  },
+  "homepage": "https://telestatic.js.org",
+  "keywords": [
+    "telestatic",
+    "telegram",
+    "mtproto",
+    "gramjs",
+    "userbot"
+  ],
+  "bugs": "https://github.com/spelsinx/telestatic/issues",
+  "repository": "https://github.com/spelsinx/telestatic",
+  "author": "spelsinxs",
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@tgsnake/parser": "1.1.1",
+    "axios": "0.27.2",
+    "big-integer": "1.6.51",
+    "chalk": "4.1.2",
+    "file-type": "16.5.3",
+    "prompts": "2.4.2",
+    "telegram": "2.8.4",
+    "tg-file-id": "https://github.com/butthx/tg-file-id#prebuild",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.35",
+    "dotenv": "16.0.1",
+    "prettier": "2.6.2",
+    "pretty-quick": "3.1.3",
+    "ts-node": "10.8.1",
+    "typedoc": "0.22.15",
+    "typescript": "4.7.3"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0",
+    "yarn": ">=1.0.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}
