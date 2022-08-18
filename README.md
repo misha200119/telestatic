@@ -1,59 +1,30 @@
-![tgsnakeicon-flaticon](./media/tgsnake.jpg)  
-Hi, **tgsnake** is a framework developed based on gram.js  
-[![github-repo](https://img.shields.io/badge/Github-butthx-blue.svg?style=for-the-badge&logo=github)](https://github.com/butthx/tgsnake)
-[![telegram-chat](https://img.shields.io/badge/Telegram-Chat-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/tgsnakechat)  
-[![telegram-channel](https://img.shields.io/badge/Telegram-Channel-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/tgsnake)
-
-> WARNING! <br/>
-> Maybe your account will be banned if you login using this framework. I don't know what caused it to happen. I am not responsible if your account is banned!
-
-### Example : 
-
-- Installation :  
-
-```bash 
-yarn add tgsnake@latest
-```
-- Simple Hello World :   
-
-```javascript
-const {Snake} = require("tgsnake")
-// import {Snake} from "tgsnake"
-const bot = new Snake({
-  apiHash : "abcde", //your api hash
-  apiId : 123456, // your api id
-  logger:"none" // gramjs logger
-})
-bot.run() //snake running
-bot.on("message",(ctx)=>{ //handle new message event.
-  ctx.reply("Hello World") // reply with "Hello World"
-  //console.log(ctx) // see json of message.
-})
-```
-More example you can found in example folder or in website.
+<p align="center"> 
   
-### Contribution  
-Welcome, You can contribute to this project. 
-#### Guide 
-- Fork this repo to your account. 
-- Clone your fork repo using git.   
-```bash 
-git clone <your github repo url> -b "dev"
-```
-Cloning branch dev in your repo. 
-- Edit and make something. 
-- Pull new update from branch `dev` original repo (this repo). 
-- Push update to your branch `dev` in fork repo.
-- Create pull request to branch `dev` original repo from branch `dev` frok repo.
+   <img width="400" src="https://img.freepik.com/premium-vector/a-white-paper-airplane-flies-in-the-sky-with-clouds-copy-space-vector-illustration_297535-3084.jpg" alt="Telestatic performance"> 
   
-### Reference 
-- [Pyrogram](https://github.com/pyrogram/pyrogram) 
-- [Telethon](https://github.com/LonamiWebs/Telethon) 
-- [GramJs](https://github.com/gram-js/gramjs)
-- [Telegram Api](https://core.telegram.org/schema) 
-- [Grammy](https://github.com/grammyjs/grammyjs)
-- [Telegraf](https://github.com/telegraf/telegraf)
+ <p> 
+ <h1 align="center">🛫 Telestatic</h1> 
   
-Thanks to all the frameworks and references that I use, several people who helped in developing this framework that I cannot mention one by one.   
+ <h4 align="center">Telegram MTProto framework for NodeJS</h4> 
   
-Build with ♥️ by [tgsnake dev](https://t.me/+Fdu8unNApTg3ZGU1).
+  
+ > 🚧 DEVELOPMENT! <br/>  
+ > Development is in full swing, wait for the results. 
+  
+  
+ ## 🔑 Installation (not fully) 
+ • From NPM: 
+ ``` 
+ npm install telestatic@latest 
+ ``` 
+  
+ • From YARN: 
+ ``` 
+ yarn add telestatic@latest 
+ ``` 
+  
+ ## 📁 Documentation (COMMING SOON) (not fully) 
+ All documentation on methods, requests, and additional information is on the **[TELESTATIC](telestatic.github.io)**. 
+  
+ ## 📃 License  
+ This information is distributed for informational purposes. We are not trying to offend anyone. For more information go to the file **[LICENSE](https://github.com/spelsinx/telestatic/blob/main/LICENSE)**. 
