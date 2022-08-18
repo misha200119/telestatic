@@ -17,14 +17,14 @@
 
 • From NPM:
 
-```
+```cmd
 npm install telestatic@latest
 
 ```
 
 • From YARN:
 
-```
+```cmd
 yarn add telestatic@latest
 
 ```
