@@ -31,7 +31,7 @@ yarn add telestatic@latest
 
 ## 🔌 Usage (not all!)
 •  Welcome UserBot 
-```
+```js
 const { Telestatic } = require('telestatic');
 /* or 
  import { Telestatic } from 'telestatic';
@@ -40,7 +40,7 @@ const { Telestatic } = require('telestatic');
 const bot = new Telestatic({
   apiHash : 'hash' , /* if you need a UserBot, paste your api hash, and api id from my.telegram.org */
   apiId : 123456, // your api id
-  botToken : 'token' /* if you need a Bot, paste bot token from @BotFather, REMOVE IF YOU NEED A UserBot */ 
+  // botToken : 'token' /* if you need a Bot, paste bot token from @BotFather */ 
 })
 
 bot.run(); // telestatic running
