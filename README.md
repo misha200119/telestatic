@@ -46,7 +46,7 @@ const bot = new Telestatic({
 bot.run(); // telestatic running
 
 bot.on("message", (ctx) => { // handle new message event.
-  ctx.reply('Hello World') // reply with "Hello World"
+    ctx.reply('Hello World') // reply with "Hello World"
   //console.log(ctx) // see json of message.
 });
 
