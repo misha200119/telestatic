@@ -32,26 +32,19 @@ yarn add telestatic@latest
 ## 🔌 Usage (not all!)
 •  Welcome UserBot 
 ```js
-const { Telestatic } = require('telestatic');
+const { Telestatic } = require('telestatic'); // importing module
 /* or 
  import { Telestatic } from 'telestatic';
 */
 
 const bot = new Telestatic({
-  apiHash : 'hash' , /* if you need a UserBot, paste your api hash, and api id from my.telegram.org */
-  apiId : 123456, // your api id
-  // botToken : 'token' /* if you need a Bot, paste bot token from @BotFather */ 
-})
-
-bot.run(); // telestatic running
-
-bot.on("message", (ctx) => { // handle new message event.
-    ctx.reply('Hello World') // reply with "Hello World"
-  //console.log(ctx) // see json of message.
+    apiHash: 'paste here', // get it from my.telegram.org
+    apiId: 1234, // get it from my.telegram.org
+    // botToken : 'token' /* if you need a Bot, paste bot token from @BotFather */ 
 });
-
-bot.hears('hi', (ctx) => { // handle the message with the required text
-    ctx.reply('Oh, hello!');
+bot.run(); // running client.
+bot.hears('hi', (ctx) => {
+    ctx.reply('Ohh, hello!');
 });
 
 ```
