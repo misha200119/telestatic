@@ -50,7 +50,7 @@ bot.hears('hi', (ctx) => {
 ```
 ## 📁 Documentation (COMMING SOON) (not fully)
 
-All documentation on methods, requests, and additional information is on the **[TELESTATIC](telestatic.github.io)**.
+All documentation on methods, requests, and additional information is on the **[TELESTATIC](telestatic.js.org)**.
 
 ## 📃 License 
 
