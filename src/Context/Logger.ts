@@ -56,7 +56,7 @@ export class Logger {
    * Creating a log template.
    */
   private template(level: string) {
-    return ['🐍', chalk[this._color[level]](level), '-'];
+    return ['🛫', chalk[this._color[level]](level), '-'];
   }
   /**
    * Setting a log level.

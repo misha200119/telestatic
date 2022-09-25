@@ -144,21 +144,21 @@ export class Telestatic<T = {}> extends MainContext<T> {
   }
   /** @hidden */
   private async _start() {
-    this.log.log(`🐍 Welcome To TGSNAKE ${this.version}.`);
-    this.log.log(`🐍 Setting Logger level to "${this.options.logger}"`);
+    this.log.log(`👋 Welcome To TELESTATIC ${this.version}.`);
+    this.log.log(`🧰 Setting Logger level to "${this.options.logger}"`);
     let _ask = async () => {
       let loginAsBot = await prompts({
         type: 'confirm',
         name: 'value',
         initial: false,
-        message: '🐍 Login as bot?',
+        message: '🤖 Login as bot?',
       });
       if (loginAsBot.value) {
         this.options.botToken = (
           await prompts({
             type: 'text',
             name: 'value',
-            message: '🐍 Input your bot token',
+            message: '🔐 Input your bot token',
           })
         ).value;
         await this._client.start({
@@ -173,7 +173,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
               await prompts({
                 type: 'text',
                 name: 'value',
-                message: '🐍 Input your international phone number',
+                message: '☎️ Input your international phone number',
               })
             ).value;
           },
@@ -182,7 +182,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
               await prompts({
                 type: 'text',
                 name: 'value',
-                message: '🐍 Input your 2FA password',
+                message: '🗝️ Input your 2FA password',
               })
             ).value;
           },
@@ -191,7 +191,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
               await prompts({
                 type: 'text',
                 name: 'value',
-                message: '🐍 Input Telegram verifications code',
+                message: '📩 Input Telegram verifications code',
               })
             ).value;
           },
@@ -239,16 +239,16 @@ export class Telestatic<T = {}> extends MainContext<T> {
   }
   /** @hidden */
   async _createClient() {
-    this.log.debug('Creating client');
+    this.log.debug('🖥️ Creating client');
     process.once('SIGINT', () => {
-      this.log.log('🐍 Killing..');
+      this.log.log('🔌 Killing..');
       this.log.debug('Saving Entities to local cache');
       if (this.entityCache) this.entityCache.save();
       if (this._client) this._client.disconnect();
       process.exit(0);
     });
     process.once('SIGTERM', () => {
-      this.log.log('🐍 Killing..');
+      this.log.log('🔌 Killing..');
       this.log.debug('Saving Entities to local cache');
       if (this.entityCache) this.entityCache.save();
       if (this._client) this._client.disconnect();
@@ -259,7 +259,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
         await prompts({
           type: 'text',
           name: 'value',
-          message: '🐍 Input your api_hash',
+          message: '#️⃣ Input your api_hash',
         })
       ).value;
     }
@@ -268,7 +268,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
         await prompts({
           type: 'text',
           name: 'value',
-          message: '🐍 Input your api_id',
+          message: '🆔 Input your api_id',
         })
       ).value;
     }
@@ -326,7 +326,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
     //    }
     //
     this.handleUpdate(this.aboutMe, this);
-    this.log.log('🐍 Connected as ', name);
+    this.log.log('🔌 Connected as ', name);
     this.connected = true;
     this.intervalCT = setInterval(() => {
       this._connectTime++;
@@ -343,7 +343,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
     if (!this.connected) {
       throw new BotError('you not connected.', 'Telestatic.save', '');
     }
-    this.log.debug('Saving Session');
+    this.log.debug('🗃️ Saving Session');
     if (this._client.session instanceof StringSession) {
       return await this._client.session.save();
     }
@@ -361,7 +361,7 @@ export class Telestatic<T = {}> extends MainContext<T> {
   }
   async generateSession() {
     this.options.storeSession = false;
-    this.log.debug('Generating session');
+    this.log.debug('🖨️ Generating session');
     await this.start();
     await this.save();
     process.exit(0);
