@@ -1,6 +1,6 @@
 {
   "name": "telestatic",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Telegram MTProto framework for NodeJS",
   "main": "./lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "pretty-quick": "pretty-quick --staged --pattern \"src/**/*.*(js|jsx|ts|tsx)\"",
     "prettier": "prettier -w ./src",
     "update": "yarn up \"**\" --interactive",
-    "prepare": "echo \"🐍 Building snake package.\" && rm -rf ./lib && tsc"
+    "prepare": "echo \" Building telestatic package.\" && rm -rf ./lib && tsc"
   },
   "homepage": "https://telestatic.js.org",
   "keywords": [
@@ -34,7 +34,7 @@
     "file-type": "16.5.3",
     "prompts": "2.4.2",
     "telegram": "2.8.4",
-    "tg-file-id": "https://github.com/butthx/tg-file-id#prebuild",
+    "tg-file-id": "https://github.com/spelsinx/tg-file-id#prebuild",
     "util": "^0.12.4"
   },
   "devDependencies": {
