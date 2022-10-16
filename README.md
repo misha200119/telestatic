@@ -1,5 +1,3 @@
-
-
 <p align="center">
 
   <img width="400" src="https://img.freepik.com/premium-vector/a-white-paper-airplane-flies-in-the-sky-with-clouds-copy-space-vector-illustration_297535-3084.jpg" alt="Telestatic performance">
@@ -42,7 +40,9 @@ const bot = new Telestatic({
     apiId: 1234, // get it from my.telegram.org
     // botToken : 'token' /* if you need a Bot, paste bot token from @BotFather */ 
 });
+
 bot.run(); // running client.
+
 bot.hears('hi', (ctx) => {
     ctx.reply('Ohh, hello!');
 });
