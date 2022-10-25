@@ -8,7 +8,8 @@
 
 <h4 align="center">Telegram MTProto framework for NodeJS</h4>
 
-> 🚧 DEVELOPMENT! <br/> 
+> **Warning** <br>
+> 🚧 DEVELOPMENT!  
 > Development is in full swing, wait for the results.
 
 ## 🔑 Installation (not fully)
