@@ -6,7 +6,9 @@
 
 <h1 align="center">🛫 Telestatic</h1>
 
-<h4 align="center">Telegram MTProto framework for NodeJS</h4>
+<h4 align="center">Telegram MTProto framework for NodeJS.</h4>
+
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat)
 
 > **Warning** <br>
 > 🚧 DEVELOPMENT!  
