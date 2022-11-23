@@ -8,7 +8,9 @@
 
 <h4 align="center">Telegram MTProto framework for NodeJS.</h4>
 
-![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat)
+<p align="center">
+<img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat"></img>
+</p>
 
 > **Warning** <br>
 > 🚧 DEVELOPMENT!  
